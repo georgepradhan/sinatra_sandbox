@@ -1,0 +1,27 @@
+<!-- Create a simple page with two forms in the index view. 
+It should have one text field; you can call it whatever you want. 
+It should also have a submit button.
+
+The first form should submit a GET request to /cool_url. 
+The second form should submit a POST request to /cool_url. -->
+
+<h1> This is the Index view </h1>
+
+<form action="/cool_url" method="get">
+  Enter stuff for get 
+  <p>Radio1 <input type="radio" name="radio1">  </p>
+  <p>Radio2 <input type="radio" name="radio2">  </p>
+  <input type="text" name="get_input">  
+  <textarea name="textbox"> Here is your text area. </textarea>>  
+  <input type="submit" value="GET">  
+</form>
+
+<form action="/cool_url" method="post">
+  Enter stuff for post 
+  <p>Radio3 <input type="radio" name="radio3">  </p>
+  <p>Radio4 <input type="radio" name="radio4">  </p>
+  <input type="text" name="post_input">  
+  <input type="textarea" name="textbox">  
+  <textarea name="textbox"> Here is your text area. </textarea>>  
+  <input type="submit" value="POST">  
+</form>
